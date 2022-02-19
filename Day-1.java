@@ -12,7 +12,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Codechef
+class Problem
 {
     Boolean solve(Set<Integer> set, Integer k)
     {
@@ -29,7 +29,7 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 	    	
-	   Codechef cf = new Codechef();
+	   Problem p = new Problem();
 	    Set <Integer> set= new HashSet<Integer>();
 	    BufferedReader bi = new BufferedReader(new InputStreamReader(System.in));
         String[] strNums;
@@ -38,7 +38,7 @@ class Codechef
             set.add(Integer.parseInt(strNums[i]));
         }
 	    int k = Integer.parseInt(bi.readLine());
-	    System.out.println(cf.solve(set,k));
+	    System.out.println(p.solve(set,k));
 	   
 	
 	    
